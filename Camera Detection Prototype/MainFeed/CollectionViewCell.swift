@@ -8,19 +8,23 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var tutorialName: UILabel!
+    @IBOutlet weak var duration: UILabel!
+    @IBOutlet weak var difficulty: UILabel!
+    
+    
     @IBOutlet weak var pinImage: UIImageView!
     @IBOutlet weak var difficultyImageView: UIImageView!
     
     
     override func prepareForReuse() {
-        title.text = nil
-        title.alpha = 0 
+        tutorialName.text = nil
+        tutorialName.alpha = 0
     }
  
     func animate() {
         UIView.animate(withDuration: 4.0) {
-            self.title.alpha = 1.0
+            self.tutorialName.alpha = 1.0
         }
     }
     

@@ -11,13 +11,15 @@
 		E12D7AE320442A0D00E6B7F2 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */; };
 		E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */; };
 		E12D7AEF20459F0600E6B7F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */; };
+		E14BAFEC205825A8003F064F /* TutorialClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFEB205825A8003F064F /* TutorialClass.swift */; };
+		E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */; };
 		E16247662046FD080085F0DF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16247652046FD080085F0DF /* CustomCell.xib */; };
 		E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1735864204997FE00043B5F /* GoogleService-Info.plist */; };
 		E173586A20499A9800043B5F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586620499A9300043B5F /* Bolts.framework */; };
 		E173586B20499A9800043B5F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586720499A9500043B5F /* FBSDKCoreKit.framework */; };
 		E173586C20499A9800043B5F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586820499A9700043B5F /* FBSDKLoginKit.framework */; };
 		E173586D20499A9800043B5F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586920499A9800043B5F /* FBSDKMessengerShareKit.framework */; };
-		E178B0F020545AC20047CA9A /* TutorialUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178B0EF20545AC20047CA9A /* TutorialUploadManager.swift */; };
+		E178B0F020545AC20047CA9A /* TutorialUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */; };
 		E181064C2056DD9D009B7B57 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181064B2056DD9D009B7B57 /* UploadViewController.swift */; };
 		E1A8A305203B0D1A00F60B21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */; };
 		E1B3710E1FBF259900877BA2 /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3710D1FBF259900877BA2 /* StepTwo.swift */; };
@@ -69,13 +71,15 @@
 		E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewStyles.swift; path = "Camera Detection Prototype/IBDesignables/UIViewStyles.swift"; sourceTree = SOURCE_ROOT; };
 		E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E14BAFEB205825A8003F064F /* TutorialClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialClass.swift; path = "Camera Detection Prototype/MainFeed/TutorialClass.swift"; sourceTree = SOURCE_ROOT; };
+		E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTutorialInfo.swift; sourceTree = "<group>"; };
 		E16247652046FD080085F0DF /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		E1735864204997FE00043B5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E173586620499A9300043B5F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		E173586720499A9500043B5F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		E173586820499A9700043B5F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E173586920499A9800043B5F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		E178B0EF20545AC20047CA9A /* TutorialUploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialUploadManager.swift; sourceTree = "<group>"; };
+		E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialUploadViewController.swift; sourceTree = "<group>"; };
 		E181064B2056DD9D009B7B57 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1B3710D1FBF259900877BA2 /* StepTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
@@ -191,7 +195,8 @@
 				E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */,
 				E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */,
 				E16247652046FD080085F0DF /* CustomCell.xib */,
-				E178B0EF20545AC20047CA9A /* TutorialUploadManager.swift */,
+				E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */,
+				E14BAFEB205825A8003F064F /* TutorialClass.swift */,
 			);
 			path = MainFeed;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 		E12D7AEA20445CA800E6B7F2 /* BasicTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */,
 			);
 			path = BasicTutorial;
 			sourceTree = "<group>";
@@ -611,12 +617,14 @@
 				E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */,
 				E1F4D5361FB3537F0063DE5F /* StepOne.swift in Sources */,
 				E1A8A305203B0D1A00F60B21 /* SignUpViewController.swift in Sources */,
-				E178B0F020545AC20047CA9A /* TutorialUploadManager.swift in Sources */,
+				E178B0F020545AC20047CA9A /* TutorialUploadViewController.swift in Sources */,
 				E1B3710E1FBF259900877BA2 /* StepTwo.swift in Sources */,
 				E1E1F7A220332F8D0099D10A /* AppManager.swift in Sources */,
+				E14BAFEC205825A8003F064F /* TutorialClass.swift in Sources */,
 				E1B371101FBF4B0A00877BA2 /* StepThree.swift in Sources */,
 				E1F4D5081FB34F170063DE5F /* AppDelegate.swift in Sources */,
 				E1B371141FBF4B1C00877BA2 /* StepFive.swift in Sources */,
+				E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

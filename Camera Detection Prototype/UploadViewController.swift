@@ -10,7 +10,6 @@ class UploadViewController: UIViewController {
         
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let image = UIImage(named: "KendallTrial")!
         
@@ -20,7 +19,6 @@ class UploadViewController: UIViewController {
             //do database stuff...
         }
     }
-    
     
     func uploadMedia(image: UIImage, completion: @escaping (_ url: String?) -> Void) {
         let storageRef = Storage.storage().reference().child(String.randomString(length: 32))
@@ -36,7 +34,7 @@ class UploadViewController: UIViewController {
                     completion(nil)
                 } else {
                     completion(meta?.downloadURL()?.absoluteString)
-                }
+            }
             
         }
         

@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
             if let _ = user {
                 
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewController")
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewControllerContainer")
                 self.present(vc!, animated: true, completion: nil)
                 //self.dismiss(animated: true, completion: nil)
                 

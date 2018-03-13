@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet var confirmPasswordTextField: UITextField!
@@ -47,16 +48,23 @@ class SignUpViewController: UIViewController {
                 if error == nil {
                     print("You have successfully signed up")
                     
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewController")
-                    self.present(vc!, animated: true, completion: nil)
-                    
+                    let ref = Database.database().reference(withPath: "users/\(user!.uid)")
+                    ref.updateChildValues(["Username": self.usernameTextField.text!]) { error, ref in
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewControllerContainer")
+                        self.present(vc!, animated: true, completion: nil)
+                    }
+                
                 } else {
+                    
+                    
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
                     
                     self.present(alertController, animated: true, completion: nil)
+                
+                    
                 }
             }
         }
