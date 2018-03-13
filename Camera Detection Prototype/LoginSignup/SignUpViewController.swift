@@ -9,9 +9,20 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
+    @IBAction func dismissSignup(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet var confirmPasswordTextField: UITextField!
+    
+    var profileImageView: UIImageView {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "ProfileImagePlaceholderAsset")
+        return imageView
+    }
     
     @IBAction func signUpButton(_ sender: Any) {
         
@@ -36,7 +47,7 @@ class SignUpViewController: UIViewController {
                 if error == nil {
                     print("You have successfully signed up")
                     
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewController")
                     self.present(vc!, animated: true, completion: nil)
                     
                 } else {

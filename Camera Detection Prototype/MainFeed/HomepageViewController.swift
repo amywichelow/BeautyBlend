@@ -5,13 +5,37 @@
 
 import UIKit
 
-class HomepageViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class HomepageViewController: UICollectionViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UICollectionViewDelegateFlowLayout {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    @IBAction func UploadButton(_ sender: UIBarButtonItem) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "UploadFormViewController")
+        self.present(vc!, animated: true, completion: nil)
+        
+    }
+    
+    
+    var filtered:[String] = []
+    var searchActive : Bool = false
+    let searchController = UISearchController(searchResultsController: nil)
     
         let reuseIdentifier = "collCell"
+    
         let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
         let titles = ["Smokey Eye","Natural Look","Bold Lip","Perfect Brows","Winged Liner", "How to Contour"]
-        override func viewDidLoad() {
+    
+    
+    override func viewDidLoad() {
             super.viewDidLoad()
+            
+            let nib = UINib(nibName: "CustomCell", bundle: nil)
+            collectionView?.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+        
+       // self.navigationController?.navigationBar.isTranslucent = false
+        
         }
         
         override func didReceiveMemoryWarning() {
@@ -28,18 +52,28 @@ class HomepageViewController: UICollectionViewController, UICollectionViewDelega
         }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCell
         
         let title = titles[indexPath.row]
         
-        let imageView = cell.viewWithTag(1) as! UIImageView
-        let label = cell.viewWithTag(2) as! UILabel
+        cell.title.text = title
+        cell.animate()
         
-        imageView.image = UIImage(named: title)
-        label.text = title
         
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        //send over info to next view controller...
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let title = titles[indexPath.row]
+        print(title)
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView,
