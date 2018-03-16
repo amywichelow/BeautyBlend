@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10B7A0B20594D71004D6925 /* UIView+Insets.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79E920594D71004D6925 /* UIView+Insets.m */; };
+		E10B7A0C20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79EC20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		E10B7A0D20594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79F020594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		E10B7A0E20594D71004D6925 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79F320594D71004D6925 /* YALAnimatingTabBarConstants.m */; };
+		E10B7A0F20594D71004D6925 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E10B79F720594D71004D6925 /* Info.plist */; };
+		E10B7A1020594D71004D6925 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79FA20594D71004D6925 /* YALSpringAnimation.m */; };
+		E10B7A1120594D71004D6925 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B79FF20594D71004D6925 /* YALFoldingTabBarController.m */; };
+		E10B7A1220594D71004D6925 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A0320594D71004D6925 /* YALTabBarItem.m */; };
+		E10B7A1320594D71004D6925 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A0620594D71004D6925 /* YALCustomHeightTabBar.m */; };
+		E10B7A1420594D71004D6925 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A0A20594D71004D6925 /* YALFoldingTabBar.m */; };
+		E10B7A16205AB658004D6925 /* CustomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A15205AB658004D6925 /* CustomUser.swift */; };
+		E10B7A18205AB95B004D6925 /* Tutorial+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */; };
 		E1115AD32046F40700DCCC30 /* HomepageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1115AD22046F40700DCCC30 /* HomepageStoryboard.storyboard */; };
 		E12D7AE320442A0D00E6B7F2 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */; };
 		E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */; };
 		E12D7AEF20459F0600E6B7F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */; };
-		E14BAFEC205825A8003F064F /* TutorialClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFEB205825A8003F064F /* TutorialClass.swift */; };
+		E14BAFEC205825A8003F064F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFEB205825A8003F064F /* Tutorial.swift */; };
 		E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */; };
 		E16247662046FD080085F0DF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16247652046FD080085F0DF /* CustomCell.xib */; };
 		E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1735864204997FE00043B5F /* GoogleService-Info.plist */; };
@@ -67,11 +79,33 @@
 		951C863414AD1628AC838B54 /* Pods_Camera_Detection_Prototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Camera_Detection_Prototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EC2BF938313EC77DBDEAA5 /* Pods-Camera Detection PrototypeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camera Detection PrototypeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Camera Detection PrototypeTests/Pods-Camera Detection PrototypeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEDF2A373FFBA50D6712B02F /* Pods-Camera Detection PrototypeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camera Detection PrototypeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Camera Detection PrototypeUITests/Pods-Camera Detection PrototypeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E10B79E820594D71004D6925 /* UIView+Insets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Insets.h"; sourceTree = "<group>"; };
+		E10B79E920594D71004D6925 /* UIView+Insets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Insets.m"; sourceTree = "<group>"; };
+		E10B79EC20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		E10B79ED20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		E10B79F020594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		E10B79F120594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		E10B79F320594D71004D6925 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		E10B79F420594D71004D6925 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		E10B79F620594D71004D6925 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		E10B79F720594D71004D6925 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10B79FA20594D71004D6925 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		E10B79FB20594D71004D6925 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		E10B79FE20594D71004D6925 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		E10B79FF20594D71004D6925 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		E10B7A0220594D71004D6925 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		E10B7A0320594D71004D6925 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		E10B7A0620594D71004D6925 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		E10B7A0720594D71004D6925 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		E10B7A0920594D71004D6925 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		E10B7A0A20594D71004D6925 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		E10B7A15205AB658004D6925 /* CustomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUser.swift; sourceTree = "<group>"; };
+		E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial+Extension.swift"; sourceTree = "<group>"; };
 		E1115AD22046F40700DCCC30 /* HomepageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomepageStoryboard.storyboard; sourceTree = "<group>"; };
 		E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewStyles.swift; path = "Camera Detection Prototype/IBDesignables/UIViewStyles.swift"; sourceTree = SOURCE_ROOT; };
 		E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		E14BAFEB205825A8003F064F /* TutorialClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialClass.swift; path = "Camera Detection Prototype/MainFeed/TutorialClass.swift"; sourceTree = SOURCE_ROOT; };
+		E14BAFEB205825A8003F064F /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tutorial.swift; path = "Camera Detection Prototype/MainFeed/Tutorial.swift"; sourceTree = SOURCE_ROOT; };
 		E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTutorialInfo.swift; sourceTree = "<group>"; };
 		E16247652046FD080085F0DF /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		E1735864204997FE00043B5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -166,6 +200,169 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E10B79E520594D71004D6925 /* Folding Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79E620594D71004D6925 /* Category */,
+				E10B79F220594D71004D6925 /* Constants */,
+				E10B79F520594D71004D6925 /* Resources */,
+				E10B79F820594D71004D6925 /* Animation */,
+				E10B79FC20594D71004D6925 /* Controller */,
+				E10B7A0020594D71004D6925 /* Model */,
+				E10B7A0420594D71004D6925 /* View */,
+			);
+			path = "Folding Tab Bar";
+			sourceTree = "<group>";
+		};
+		E10B79E620594D71004D6925 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79E720594D71004D6925 /* UIView */,
+				E10B79EA20594D71004D6925 /* CAAnimation */,
+				E10B79EE20594D71004D6925 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E10B79E720594D71004D6925 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79E820594D71004D6925 /* UIView+Insets.h */,
+				E10B79E920594D71004D6925 /* UIView+Insets.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E10B79EA20594D71004D6925 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79EB20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		E10B79EB20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79EC20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m */,
+				E10B79ED20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.h */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		E10B79EE20594D71004D6925 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79EF20594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		E10B79EF20594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79F020594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+				E10B79F120594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		E10B79F220594D71004D6925 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79F320594D71004D6925 /* YALAnimatingTabBarConstants.m */,
+				E10B79F420594D71004D6925 /* YALAnimatingTabBarConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E10B79F520594D71004D6925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79F620594D71004D6925 /* FoldingTabBar.h */,
+				E10B79F720594D71004D6925 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E10B79F820594D71004D6925 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79F920594D71004D6925 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		E10B79F920594D71004D6925 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79FA20594D71004D6925 /* YALSpringAnimation.m */,
+				E10B79FB20594D71004D6925 /* YALSpringAnimation.h */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		E10B79FC20594D71004D6925 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79FD20594D71004D6925 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E10B79FD20594D71004D6925 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E10B79FE20594D71004D6925 /* YALFoldingTabBarController.h */,
+				E10B79FF20594D71004D6925 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		E10B7A0020594D71004D6925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E10B7A0120594D71004D6925 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E10B7A0120594D71004D6925 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				E10B7A0220594D71004D6925 /* YALTabBarItem.h */,
+				E10B7A0320594D71004D6925 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		E10B7A0420594D71004D6925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E10B7A0520594D71004D6925 /* CustomHeightTabBar */,
+				E10B7A0820594D71004D6925 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E10B7A0520594D71004D6925 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E10B7A0620594D71004D6925 /* YALCustomHeightTabBar.m */,
+				E10B7A0720594D71004D6925 /* YALCustomHeightTabBar.h */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		E10B7A0820594D71004D6925 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E10B7A0920594D71004D6925 /* YALFoldingTabBar.h */,
+				E10B7A0A20594D71004D6925 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
 		E1115AD12046F3B700DCCC30 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +393,8 @@
 				E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */,
 				E16247652046FD080085F0DF /* CustomCell.xib */,
 				E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */,
-				E14BAFEB205825A8003F064F /* TutorialClass.swift */,
+				E14BAFEB205825A8003F064F /* Tutorial.swift */,
+				E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */,
 			);
 			path = MainFeed;
 			sourceTree = "<group>";
@@ -207,6 +405,7 @@
 				E1E1F7A120332F8D0099D10A /* AppManager.swift */,
 				E1E1F79F20332F350099D10A /* AppContainerViewController.swift */,
 				E1E1F79D2033076B0099D10A /* LoginViewController.swift */,
+				E10B7A15205AB658004D6925 /* CustomUser.swift */,
 				E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */,
 			);
 			path = LoginSignup;
@@ -261,6 +460,7 @@
 		E1F4D5061FB34F170063DE5F /* Camera Detection Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				E10B79E520594D71004D6925 /* Folding Tab Bar */,
 				E12D7AE920445C3300E6B7F2 /* Delegate */,
 				E12D7AE820445C3100E6B7F2 /* LoginSignup */,
 				E12D7AE720445C2E00E6B7F2 /* MainFeed */,
@@ -412,6 +612,7 @@
 			files = (
 				E1115AD32046F40700DCCC30 /* HomepageStoryboard.storyboard in Resources */,
 				E1F4D5121FB34F170063DE5F /* LaunchScreen.storyboard in Resources */,
+				E10B7A0F20594D71004D6925 /* Info.plist in Resources */,
 				E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */,
 				E16247662046FD080085F0DF /* CustomCell.xib in Resources */,
 				E1F4D50F1FB34F170063DE5F /* Assets.xcassets in Resources */,
@@ -610,21 +811,32 @@
 				E181064C2056DD9D009B7B57 /* UploadViewController.swift in Sources */,
 				E1E1F79E2033076B0099D10A /* LoginViewController.swift in Sources */,
 				E1B371161FBF4B2700877BA2 /* StepSix.swift in Sources */,
+				E10B7A0B20594D71004D6925 /* UIView+Insets.m in Sources */,
+				E10B7A18205AB95B004D6925 /* Tutorial+Extension.swift in Sources */,
 				E1F4D50A1FB34F170063DE5F /* LiveTutorialViewController.swift in Sources */,
 				E1B371121FBF4B1500877BA2 /* StepFour.swift in Sources */,
+				E10B7A0C20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				E12D7AEF20459F0600E6B7F2 /* CollectionViewCell.swift in Sources */,
 				E1E1F7A020332F350099D10A /* AppContainerViewController.swift in Sources */,
 				E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */,
+				E10B7A16205AB658004D6925 /* CustomUser.swift in Sources */,
+				E10B7A1320594D71004D6925 /* YALCustomHeightTabBar.m in Sources */,
 				E1F4D5361FB3537F0063DE5F /* StepOne.swift in Sources */,
 				E1A8A305203B0D1A00F60B21 /* SignUpViewController.swift in Sources */,
 				E178B0F020545AC20047CA9A /* TutorialUploadViewController.swift in Sources */,
 				E1B3710E1FBF259900877BA2 /* StepTwo.swift in Sources */,
 				E1E1F7A220332F8D0099D10A /* AppManager.swift in Sources */,
-				E14BAFEC205825A8003F064F /* TutorialClass.swift in Sources */,
+				E10B7A1020594D71004D6925 /* YALSpringAnimation.m in Sources */,
+				E14BAFEC205825A8003F064F /* Tutorial.swift in Sources */,
+				E10B7A1120594D71004D6925 /* YALFoldingTabBarController.m in Sources */,
 				E1B371101FBF4B0A00877BA2 /* StepThree.swift in Sources */,
 				E1F4D5081FB34F170063DE5F /* AppDelegate.swift in Sources */,
+				E10B7A1420594D71004D6925 /* YALFoldingTabBar.m in Sources */,
+				E10B7A0E20594D71004D6925 /* YALAnimatingTabBarConstants.m in Sources */,
 				E1B371141FBF4B1C00877BA2 /* StepFive.swift in Sources */,
+				E10B7A0D20594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */,
+				E10B7A1220594D71004D6925 /* YALTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

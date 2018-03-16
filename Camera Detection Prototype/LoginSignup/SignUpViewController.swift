@@ -49,7 +49,7 @@ class SignUpViewController: UIViewController {
                     print("You have successfully signed up")
                     
                     let ref = Database.database().reference(withPath: "users/\(user!.uid)")
-                    ref.updateChildValues(["Username": self.usernameTextField.text!]) { error, ref in
+                    ref.updateChildValues(["username": self.usernameTextField.text!]) { error, ref in
                         let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewControllerContainer")
                         self.present(vc!, animated: true, completion: nil)
                     }

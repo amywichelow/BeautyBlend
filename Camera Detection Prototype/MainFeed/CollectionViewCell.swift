@@ -14,7 +14,6 @@ class CustomCell: UICollectionViewCell {
     
     
     @IBOutlet weak var pinImage: UIImageView!
-    @IBOutlet weak var difficultyImageView: UIImageView!
     
     
     override func prepareForReuse() {

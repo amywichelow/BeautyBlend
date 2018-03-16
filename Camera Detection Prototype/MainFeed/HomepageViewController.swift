@@ -25,30 +25,35 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
     
         let reuseIdentifier = "collCell"
         let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-//        let titles = ["Smokey Eye","Natural Look","Bold Lip","Perfect Brows","Winged Liner", "How to Contour", "Hallam Smells"]
     
     override func viewDidLoad() {
             super.viewDidLoad()
+
+        _ = Database.database().reference().child("tutorials")
         
-            let ref = Database.database().reference().child("Tutorials").childByAutoId()
         
-        collectionView?.reloadData()
         
-        ref.observeSingleEvent(of: .value, with: { snapshot in
-            for tutorial in snapshot.children {
-                if let data = tutorial as? DataSnapshot {
-                    if let tutorial = Tutorial(snapshot: data) {
-                        self.tutorials.append(tutorial)
-                    }
-                }
-            }
-        })
+//        ref.observeSingleEvent(of: .value, with: { snapshot in
+//
+//            for tutorial in snapshot.children {
+//                if let data = tutorial as? DataSnapshot {
+//                    if let tutorial = Tutorial(snapshot: data) {
+//                        self.tutorials.append(tutorial)
+//                    }
+//                }
+//            }
+//        })
+        
+        
         
             let nib = UINib(nibName: "CustomCell", bundle: nil)
             collectionView?.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
         
+            collectionView?.reloadData()
         }
-        
+    
+    
+    
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
         }
@@ -70,8 +75,6 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
         
         cell.tutorialName?.text = tutorial.tutorialName
         cell.animate()
-        
-        
         
         return cell
     }

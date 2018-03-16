@@ -26,5 +26,7 @@ pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
 
+pod 'FoldingTabBar', '~> 1.2.1'
+
 
 end

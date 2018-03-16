@@ -53,7 +53,6 @@
                 <outlet property="difficulty" destination="Wt0-vr-U61" id="kCC-pC-BWV"/>
                 <outlet property="duration" destination="iYe-iA-lJk" id="N0N-H2-DDB"/>
                 <outlet property="pinImage" destination="I7Y-Ve-F7y" id="lGR-Zm-9ce"/>
-                <outlet property="title" destination="vDo-pb-wjf" id="3IY-cn-doQ"/>
                 <outlet property="tutorialName" destination="vDo-pb-wjf" id="TeN-2b-eVa"/>
             </connections>
             <point key="canvasLocation" x="-62" y="-225"/>
