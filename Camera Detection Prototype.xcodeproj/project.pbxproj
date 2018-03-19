@@ -32,6 +32,7 @@
 		E173586C20499A9800043B5F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586820499A9700043B5F /* FBSDKLoginKit.framework */; };
 		E173586D20499A9800043B5F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586920499A9800043B5F /* FBSDKMessengerShareKit.framework */; };
 		E178B0F020545AC20047CA9A /* TutorialUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */; };
+		E17D215D205D3A5E002E467B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17D215C205D3A5D002E467B /* Assets.xcassets */; };
 		E181064C2056DD9D009B7B57 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181064B2056DD9D009B7B57 /* UploadViewController.swift */; };
 		E1A8A305203B0D1A00F60B21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */; };
 		E1B3710E1FBF259900877BA2 /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3710D1FBF259900877BA2 /* StepTwo.swift */; };
@@ -44,7 +45,6 @@
 		E1E1F7A220332F8D0099D10A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1F7A120332F8D0099D10A /* AppManager.swift */; };
 		E1F4D5081FB34F170063DE5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4D5071FB34F170063DE5F /* AppDelegate.swift */; };
 		E1F4D50A1FB34F170063DE5F /* LiveTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4D5091FB34F170063DE5F /* LiveTutorialViewController.swift */; };
-		E1F4D50F1FB34F170063DE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F4D50E1FB34F170063DE5F /* Assets.xcassets */; };
 		E1F4D5121FB34F170063DE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F4D5101FB34F170063DE5F /* LaunchScreen.storyboard */; };
 		E1F4D51D1FB34F170063DE5F /* Camera_Detection_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4D51C1FB34F170063DE5F /* Camera_Detection_PrototypeTests.swift */; };
 		E1F4D5281FB34F170063DE5F /* Camera_Detection_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4D5271FB34F170063DE5F /* Camera_Detection_PrototypeUITests.swift */; };
@@ -114,6 +114,18 @@
 		E173586820499A9700043B5F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E173586920499A9800043B5F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialUploadViewController.swift; sourceTree = "<group>"; };
+		E17D215C205D3A5D002E467B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E17D215F205D701B002E467B /* Sweet Pea_2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sweet Pea_2.ttf"; path = "Camera Detection Prototype/Assets.xcassets/Sweet Pea_2.ttf"; sourceTree = SOURCE_ROOT; };
+		E17D2160205D7039002E467B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E17D2161205D7039002E467B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../../Downloads/roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		E17D2162205D7039002E467B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Downloads/roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E17D2163205D7039002E467B /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Condensed.ttf"; path = "../../../../Downloads/roboto/Roboto-Condensed.ttf"; sourceTree = "<group>"; };
+		E17D2164205D7039002E467B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E17D2165205D7039002E467B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../../../Downloads/roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		E17D2166205D7039002E467B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../Downloads/roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		E17D2167205D7039002E467B /* Roboto-BoldCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldCondensed.ttf"; path = "../../../../Downloads/roboto/Roboto-BoldCondensed.ttf"; sourceTree = "<group>"; };
+		E17D2168205FD898002E467B /* Gotham Rounded Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Rounded Book.ttf"; path = "../../../../Downloads/Connections-master/Extension/Gotham Rounded Book.ttf"; sourceTree = "<group>"; };
+		E17D2169205FD96B002E467B /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Bold Regular.ttf"; path = "../../../../Library/Fonts/Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		E181064B2056DD9D009B7B57 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1B3710D1FBF259900877BA2 /* StepTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
@@ -127,7 +139,6 @@
 		E1F4D5041FB34F170063DE5F /* Camera Detection Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Detection Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F4D5071FB34F170063DE5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F4D5091FB34F170063DE5F /* LiveTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTutorialViewController.swift; sourceTree = "<group>"; };
-		E1F4D50E1FB34F170063DE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F4D5111FB34F170063DE5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1F4D5131FB34F170063DE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1F4D5181FB34F170063DE5F /* Camera Detection PrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camera Detection PrototypeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -435,6 +446,24 @@
 			path = IBDesignables;
 			sourceTree = "<group>";
 		};
+		E17D215E205D700D002E467B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E17D2165205D7039002E467B /* Roboto-Black.ttf */,
+				E17D2164205D7039002E467B /* Roboto-Bold.ttf */,
+				E17D2167205D7039002E467B /* Roboto-BoldCondensed.ttf */,
+				E17D2163205D7039002E467B /* Roboto-Condensed.ttf */,
+				E17D2166205D7039002E467B /* Roboto-Light.ttf */,
+				E17D2162205D7039002E467B /* Roboto-Medium.ttf */,
+				E17D2160205D7039002E467B /* Roboto-Regular.ttf */,
+				E17D2161205D7039002E467B /* Roboto-Thin.ttf */,
+				E17D2168205FD898002E467B /* Gotham Rounded Book.ttf */,
+				E17D2169205FD96B002E467B /* Gotham Bold Regular.ttf */,
+				E17D215F205D701B002E467B /* Sweet Pea_2.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E1F4D4FB1FB34F170063DE5F = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +489,7 @@
 		E1F4D5061FB34F170063DE5F /* Camera Detection Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				E17D215E205D700D002E467B /* Fonts */,
 				E10B79E520594D71004D6925 /* Folding Tab Bar */,
 				E12D7AE920445C3300E6B7F2 /* Delegate */,
 				E12D7AE820445C3100E6B7F2 /* LoginSignup */,
@@ -468,10 +498,10 @@
 				E1115AD12046F3B700DCCC30 /* Storyboards */,
 				E12D7AEA20445CA800E6B7F2 /* BasicTutorial */,
 				E12D7AEB20445D7F00E6B7F2 /* IBDesignables */,
-				E1F4D50E1FB34F170063DE5F /* Assets.xcassets */,
 				E1F4D5131FB34F170063DE5F /* Info.plist */,
 				E1735864204997FE00043B5F /* GoogleService-Info.plist */,
 				E181064B2056DD9D009B7B57 /* UploadViewController.swift */,
+				E17D215C205D3A5D002E467B /* Assets.xcassets */,
 			);
 			path = "Camera Detection Prototype";
 			sourceTree = "<group>";
@@ -614,8 +644,8 @@
 				E1F4D5121FB34F170063DE5F /* LaunchScreen.storyboard in Resources */,
 				E10B7A0F20594D71004D6925 /* Info.plist in Resources */,
 				E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */,
+				E17D215D205D3A5E002E467B /* Assets.xcassets in Resources */,
 				E16247662046FD080085F0DF /* CustomCell.xib in Resources */,
-				E1F4D50F1FB34F170063DE5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
