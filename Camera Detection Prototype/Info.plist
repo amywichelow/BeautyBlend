@@ -58,6 +58,19 @@
 	<string>409115532835288</string>
 	<key>FacebookDisplayName</key>
 	<string>Beauty Blend</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Black.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-BoldCondensed.ttf</string>
+		<string>Roboto-Condensed.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Sweet Pea_2.ttf</string>
+		<string>Gotham Rounded Book.tth</string>
+	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
