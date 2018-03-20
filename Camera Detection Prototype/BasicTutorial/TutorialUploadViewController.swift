@@ -3,23 +3,31 @@ import FirebaseStorage
 import Firebase
 
 class TutorialUploadViewController: UIViewController {
-//    
-//    let tutorialRef = Database.database().reference().child("tutorials")
-//    
-    @IBAction func nextStepButton(_ sender: Any) {
+    
+    let storage = Storage.storage()
+
+    let tutorial = Tutorial(tutorialName: "Amy's Tutorial", duration: 10, difficulty: 3)
+    
+    @IBAction func cancelButton(_ sender: Any) {
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddTutorialStep")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewControllerContainer")
         self.present(vc!, animated: true, completion: nil)
         
     }
     
-    let tutorialRef = Database.database().reference().child("tutorials")
-
-    var tutorials = [Tutorial]()
+    
+    @IBAction func nextStepButton(_ sender: Any) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddTutorialStep
+        vc.tutorial = tutorial
+    }
+    
     
     @IBOutlet weak var tutorialNameTextField: UITextField!
     @IBOutlet weak var durationTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var mainTutorialImage: UIImageView!
     
     override func viewDidLoad() {

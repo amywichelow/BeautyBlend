@@ -15,7 +15,8 @@ class Tutorial {
     let tutorialName: String
     let difficulty: Int
     let duration: Int
-    let tutorialDescription: String
+    
+    let steps = [TutorialStep]()
     
     init?(snapshot: DataSnapshot) {
         
@@ -24,18 +25,17 @@ class Tutorial {
             tutorialName = snapshotData ["tutorialName"] as! String
             difficulty = snapshotData ["difficulty"] as! Int
             duration = snapshotData ["duration"] as! Int
-            tutorialDescription = snapshotData ["tutorialDescription"] as! String
         } else {
             return nil
         }
         
     }
     
-    init(tutorialName: String, duration: Int, difficulty: Int, tutorialDescription: String) {
+    init(tutorialName: String, duration: Int, difficulty: Int) {
         self.tutorialName = tutorialName
         self.duration = duration
         self.difficulty = difficulty
-        self.tutorialDescription = tutorialDescription
+        
     }
     
 }

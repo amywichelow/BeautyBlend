@@ -24,59 +24,56 @@
             <rect key="frame" x="0.0" y="0.0" width="169" height="302"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-Ve-F7y">
-                    <rect key="frame" x="0.0" y="0.0" width="169" height="151"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="autumnFinalStepAsset 1" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-Ve-F7y">
+                    <rect key="frame" x="0.0" y="0.0" width="169" height="224"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TutorialName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDo-pb-wjf">
-                    <rect key="frame" x="11" y="151" width="142" height="27"/>
+                    <rect key="frame" x="6" y="227" width="142" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYe-iA-lJk">
-                    <rect key="frame" x="11" y="181" width="66" height="21"/>
+                    <rect key="frame" x="6" y="255" width="66" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-x8-1eH">
-                    <rect key="frame" x="11" y="165" width="66" height="21"/>
+                    <rect key="frame" x="6" y="241" width="66" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMj-sW-jtP">
-                    <rect key="frame" x="11" y="224" width="148" height="69"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="difficulty3" translatesAutoresizingMaskIntoConstraints="NO" id="sG4-bU-FvV">
+                    <rect key="frame" x="6" y="276" width="91" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="11"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRd-Y5-Jfj">
-                    <rect key="frame" x="119" y="177" width="37" height="38"/>
+                    <rect key="frame" x="116" y="241" width="37" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="goButtonAsset 1"/>
+                    <state key="normal" image="goButtonV2"/>
                     <connections>
                         <action selector="goButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="530-5H-Xcb"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="difficulty3" translatesAutoresizingMaskIntoConstraints="NO" id="sG4-bU-FvV">
-                    <rect key="frame" x="11" y="204" width="91" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="difficulty" destination="sG4-bU-FvV" id="MWr-RJ-Bvc"/>
                 <outlet property="duration" destination="iYe-iA-lJk" id="N0N-H2-DDB"/>
                 <outlet property="mainTutorialImage" destination="I7Y-Ve-F7y" id="jFM-aR-tom"/>
-                <outlet property="tutorialDescription" destination="dMj-sW-jtP" id="eEe-HM-pjx"/>
                 <outlet property="tutorialName" destination="vDo-pb-wjf" id="TeN-2b-eVa"/>
                 <outlet property="username" destination="ewg-x8-1eH" id="SC9-2g-3d9"/>
             </connections>
@@ -84,7 +81,8 @@
         </view>
     </objects>
     <resources>
+        <image name="autumnFinalStepAsset 1" width="3024" height="4032"/>
         <image name="difficulty3" width="585" height="109"/>
-        <image name="goButtonAsset 1" width="285" height="285"/>
+        <image name="goButtonV2" width="303" height="303"/>
     </resources>
 </document>

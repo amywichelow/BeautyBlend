@@ -11,49 +11,45 @@ import UIKit
 import Firebase
 
 class AddTutorialStep: UIViewController {
+
+    var tutorial: Tutorial!
     
-    let tutorialRef = Database.database().reference().child("tutorials")
+    let newTutorialRef = Database.database().reference().child("tutorials").childByAutoId()
     
-    var tutorials = [Tutorial]()
+    var tutorialSteps = [TutorialStep]()
     
     @IBOutlet weak var stepLabel: UILabel!
     
-    @IBOutlet weak var decriptionLabel: UITextField!
+    @IBOutlet weak var tutorialStepDescription: UITextField!
     
     @IBAction func addStepButton(_ sender: Any) {
+        tutorialSteps.append(TutorialStep(tutorialStepDescription: self.tutorialStepDescription.text!))
     }
     
     @IBAction func finishUploadButton(_ sender: Any) {
-        
-        let tutorial = Tutorial(tutorialName: "Makeup", duration: 10, difficulty: 3, tutorialDescription: "Tutorial")
-        tutorials.append(tutorial)
-        
         upload { success in
             print("All steps uploaded")
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomepageViewControllerContainer")
+            self.present(vc!, animated: true, completion: nil)
+            
         }
     }
     
     func upload(completion: @escaping (_ success: Bool) -> Void) {
         
-        //        tutorialRef.childByAutoId().setValue([
-        //            "tutorialName": self.tutorialNameTextField.text!,
-        //            "duration": self.durationTextField.text!,
-        //            "difficulty": self.difficultyTextField.text!,
-        //            "tutorialDescription": self.descriptionTextField.text!,
-        //            "user": CustomUser.shared.username!,
-        //            "usser_uid": Auth.auth().currentUser!.uid
-        //            ])
-        
-        let newTutorialRef = tutorialRef.childByAutoId()
-        var count = 0
-        
-        for tutorial in tutorials {
-            newTutorialRef.childByAutoId().setValue(tutorial.toDict(), withCompletionBlock: { error, ref in
-                count += 1
-                if count == self.tutorials.count {
-                    completion(true)
-                }
-            })
+        newTutorialRef.setValue(tutorial.toDict()) { error, ref in
+            
+            var count = 0
+
+            for tutorial in self.tutorialSteps {
+                ref.child("steps").childByAutoId().setValue(tutorial.toDict(), withCompletionBlock: { error, ref in
+                    count += 1
+                    if count == self.tutorialSteps.count {
+                        completion(true)
+                    }
+                })
+            }
         }
     }
         

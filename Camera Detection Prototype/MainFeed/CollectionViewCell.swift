@@ -12,7 +12,6 @@ class CustomCell: UICollectionViewCell {
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var duration: UILabel!
     @IBOutlet weak var difficulty: UIImageView!
-    @IBOutlet weak var tutorialDescription: UILabel!
     
     
     @IBAction func goButton(_ sender: Any) {
@@ -33,4 +32,13 @@ class CustomCell: UICollectionViewCell {
         }
     }
     
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return self.layer.cornerRadius
+        }
+        set {
+            self.layer.cornerRadius = newValue
+            
+        }
+    }
 }

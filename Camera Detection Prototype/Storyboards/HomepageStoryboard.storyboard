@@ -62,7 +62,7 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="pbh-4A-Snp">
                             <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" id="a65-JQ-fKP">
-                                <rect key="frame" x="16" y="7" width="208" height="30"/>
+                                <rect key="frame" x="16" y="7" width="185" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -70,18 +70,14 @@
                             </textField>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Upload" style="plain" id="Kxp-jZ-ZOo">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BNb-2Y-y0J">
-                                    <rect key="frame" x="304" y="5.5" width="55" height="33"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <state key="normal" title="Upload"/>
-                                </button>
+                            <barButtonItem image="uploadIconAsset 39" id="Cgc-h4-WHu">
                                 <connections>
-                                    <action selector="UploadButton:" destination="bFn-o1-r4d" id="VLl-4q-FjM"/>
+                                    <action selector="UploadButton:" destination="bFn-o1-r4d" id="vjH-uE-oi6"/>
+                                    <segue destination="FET-cU-yUq" kind="show" id="CpT-bz-Log"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Sign Out" id="n5h-Rn-IXw"/>
+                            <barButtonItem image="filterIconAsset 38" id="EwQ-Cg-3kz"/>
+                            <barButtonItem image="sortIconAsset 36" id="Via-Ib-eS0"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -102,7 +98,7 @@
         <scene sceneID="Clp-Dm-UvJ">
             <objects>
                 <viewController storyboardIdentifier="TutorialUploadViewController" id="FET-cU-yUq" customClass="TutorialUploadViewController" customModule="Camera_Detection_Prototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cDk-fS-S49" customClass="UIViewStyles" customModule="Camera_Detection_Prototype" customModuleProvider="target">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="cDk-fS-S49" customClass="UIViewStyles" customModule="Camera_Detection_Prototype" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -122,11 +118,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odo-kf-xIn">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="227"/>
+                                        <rect key="frame" x="0.0" y="-1" width="292" height="329"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8G4-bi-gF9">
-                                                <rect key="frame" x="0.0" y="226" width="292" height="1"/>
+                                                <rect key="frame" x="0.0" y="328" width="292" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                 <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
@@ -134,57 +130,47 @@
                                         <color key="backgroundColor" red="0.92603760960000003" green="0.89298135040000004" blue="0.9507291913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M6h-4L-yTW">
-                                        <rect key="frame" x="0.0" y="0.0" width="292" height="226"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="327"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tutorial Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbt-Np-mpd">
-                                        <rect key="frame" x="8" y="234" width="186" height="30"/>
+                                        <rect key="frame" x="8" y="350" width="186" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Duration (Minutes)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQu-Dl-eRZ">
-                                        <rect key="frame" x="8" y="272" width="118" height="30"/>
+                                        <rect key="frame" x="8" y="388" width="118" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Short Description (Max 300 Characters) " minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="21j-ql-IdN">
-                                        <rect key="frame" x="8" y="348" width="276" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <string key="text" base64-UTF8="YES">
-Cg
-</string>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Duration (Minutes)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IpV-My-70b" userLabel="Difficulty Text Field">
-                                        <rect key="frame" x="8" y="310" width="118" height="30"/>
+                                        <rect key="frame" x="8" y="426" width="118" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWD-OF-TBU">
-                                        <rect key="frame" x="8" y="263" width="186" height="1"/>
+                                        <rect key="frame" x="8" y="379" width="186" height="1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-1G-2N1">
-                                        <rect key="frame" x="8" y="301" width="118" height="1"/>
+                                        <rect key="frame" x="8" y="417" width="118" height="1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-Ul-awH">
-                                        <rect key="frame" x="8" y="339" width="118" height="1"/>
+                                        <rect key="frame" x="8" y="455" width="118" height="1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAk-N5-JWb">
-                                        <rect key="frame" x="109" y="84" width="75" height="58"/>
+                                        <rect key="frame" x="109" y="134" width="75" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="photoUploadButtonAsset"/>
                                     </button>
@@ -206,18 +192,24 @@ Cg
                                 </state>
                                 <connections>
                                     <action selector="nextStepButton:" destination="FET-cU-yUq" eventType="touchUpInside" id="9sb-rk-UfS"/>
+                                    <segue destination="OXQ-Ie-4HN" kind="show" identifier="AddStep" id="GpI-fZ-BnL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92603760960000003" green="0.89298135040000004" blue="0.9507291913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58431372550000005" green="0.45882352939999999" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TCm-dr-cb8"/>
                     </view>
                     <navigationItem key="navigationItem" id="N5v-g7-ecO">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ocB-8R-D3V"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ocB-8R-D3V">
+                            <color key="tintColor" red="0.58431372550000005" green="0.45882352939999999" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="FET-cU-yUq" id="Tkg-uY-KLP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTextField" destination="21j-ql-IdN" id="lDm-7h-LhZ"/>
                         <outlet property="durationTextField" destination="ZQu-Dl-eRZ" id="hKN-uQ-T9V"/>
                         <outlet property="mainTutorialImage" destination="M6h-4L-yTW" id="9yl-Dy-gT3"/>
                         <outlet property="tutorialNameTextField" destination="vbt-Np-mpd" id="jVC-Ju-150"/>
@@ -225,13 +217,13 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2de-sr-8j5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877.5999999999999" y="-2.2488755622188905"/>
+            <point key="canvasLocation" x="2912.8000000000002" y="-2.2488755622188905"/>
         </scene>
         <!--Add Tutorial Step-->
         <scene sceneID="rxh-bL-myr">
             <objects>
                 <viewController storyboardIdentifier="AddTutorialStep" id="OXQ-Ie-4HN" customClass="AddTutorialStep" customModule="Camera_Detection_Prototype" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PLp-sC-0U0">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="PLp-sC-0U0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -305,7 +297,7 @@ Cg
 </string>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxM-n7-R2x">
                                         <rect key="frame" x="109" y="135" width="75" height="58"/>
@@ -324,19 +316,15 @@ Cg
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.90588235294117647" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="U4G-ic-D0K"/>
-                        <connections>
-                            <outlet property="tutorialStepDescription" destination="QdF-KG-7cE" id="15F-hi-CKl"/>
-                            <outlet property="tutorialStepImage" destination="zJW-IT-zhH" id="Sby-Uc-xVb"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="decriptionLabel" destination="QdF-KG-7cE" id="987-wt-ESc"/>
                         <outlet property="stepLabel" destination="e1W-4q-Mim" id="1fg-7n-fDA"/>
+                        <outlet property="tutorialStepDescription" destination="QdF-KG-7cE" id="6pv-Zb-Khq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0J9-b4-8Ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3549.5999999999999" y="-2.2488755622188905"/>
+            <point key="canvasLocation" x="3689" y="-2"/>
         </scene>
         <!--Step View Contoller-->
         <scene sceneID="3uh-nd-dmH">
@@ -363,6 +351,29 @@ Cg
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                 <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqo-X8-9lu">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="307"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-Ft-67U">
+                                                        <rect key="frame" x="0.0" y="31" width="292" height="1"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                        <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICD-N6-HFZ">
+                                                        <rect key="frame" x="125" y="0.0" width="42" height="33"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="14"/>
+                                                        <color key="textColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-Dv-rFw">
+                                                        <rect key="frame" x="0.0" y="31" width="292" height="276"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92603760960000003" green="0.89298135040000004" blue="0.9507291913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -380,34 +391,6 @@ Cg
                                         <real key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqo-X8-9lu">
-                                <rect key="frame" x="239" y="96" width="292" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-Dv-rFw">
-                                        <rect key="frame" x="0.0" y="7" width="292" height="280"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXB-TP-wZd">
-                                        <rect key="frame" x="0.0" y="295" width="292" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-Ft-67U">
-                                        <rect key="frame" x="0.0" y="31" width="292" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICD-N6-HFZ">
-                                        <rect key="frame" x="125" y="5" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="14"/>
-                                        <color key="textColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.92603760960000003" green="0.89298135040000004" blue="0.9507291913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92974370718002319" green="0.90470105409622192" blue="0.96665352582931519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -470,7 +453,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dk-JH-MFe">
                                 <rect key="frame" x="222" y="620" width="47" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="12"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -486,7 +469,7 @@ Cg
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.55363884230000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beauty Blend." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfp-rL-KMP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beauty Blend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfp-rL-KMP">
                                 <rect key="frame" x="62" y="104" width="251" height="67"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="Sweet_Pea" family="Sweet Pea" pointSize="45"/>
@@ -547,9 +530,9 @@ Cg
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeX-eD-LZf">
-                                <rect key="frame" x="231" y="619" width="46" height="28"/>
+                                <rect key="frame" x="232" y="619" width="46" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="12"/>
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -867,6 +850,7 @@ Cg
         </scene>
     </scenes>
     <resources>
+        <image name="filterIconAsset 38" width="41" height="39"/>
         <image name="finalAddStepButtonAsset 33" width="307" height="96"/>
         <image name="finalFinishUploadButtonAsset 34" width="307" height="96"/>
         <image name="finalLoginButtonAsset 31" width="495" height="96"/>
@@ -874,5 +858,8 @@ Cg
         <image name="finalSignUpButtonAsset 30" width="495" height="96"/>
         <image name="photoUploadButtonAsset" width="101" height="79"/>
         <image name="profileImgUploadButton23Asset 29" width="287" height="287"/>
+        <image name="sortIconAsset 36" width="32" height="43"/>
+        <image name="uploadIconAsset 39" width="36" height="36"/>
     </resources>
+    <color key="tintColor" red="0.58431372550000005" green="0.45882352939999999" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

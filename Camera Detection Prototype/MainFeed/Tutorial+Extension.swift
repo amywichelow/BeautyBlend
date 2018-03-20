@@ -8,7 +8,6 @@ extension Tutorial {
             "tutorialName": tutorialName,
             "duration": duration,
             "difficulty": difficulty,
-            "tutorialDescription": tutorialDescription,
             "user": CustomUser.shared.username!,
             "usser_uid": Auth.auth().currentUser!.uid
         ]

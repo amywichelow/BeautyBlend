@@ -39,10 +39,7 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
             }
             self.collectionView?.reloadData()
         })
-        
-    
-        
-        
+
     
     }
 
@@ -69,7 +66,6 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
         
         cell.tutorialName?.text = tutorial.tutorialName
         cell.duration.text = "\(tutorial.duration)"
-        cell.tutorialDescription.text = tutorial.tutorialDescription
         cell.animate()
         
         return cell
@@ -78,14 +74,8 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
-        //send over info to next view controller...
     }
     
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-////        let title = titles[indexPath.row]
-//        print(title)
-//        collectionView.deselectItem(at: indexPath, animated: true)
-//    }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
