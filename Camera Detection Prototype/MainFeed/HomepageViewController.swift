@@ -5,19 +5,15 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class HomepageViewController: UICollectionViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UICollectionViewDelegateFlowLayout {
     func updateSearchResults(for searchController: UISearchController) {
 
     }
+    
     var tutorials = [Tutorial]()
-        
-    @IBAction func UploadButton(_ sender: UIBarButtonItem) {
-        
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TutorialUploadViewController")
-        self.present(vc!, animated: true, completion: nil)
-        
-    }
+    let tutorialRef = Database.database().reference().child("tutorials")
     
     var filtered:[String] = []
     var searchActive : Bool = false
@@ -27,53 +23,53 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
         let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     
     override func viewDidLoad() {
-            super.viewDidLoad()
+        super.viewDidLoad()
+        
+        let nib = UINib(nibName: "CustomCell", bundle: nil)
+        collectionView?.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        tutorialRef.observeSingleEvent(of: .value, with: { snapshot in
 
-        _ = Database.database().reference().child("tutorials")
+            for tutorials in snapshot.children {
+                if let data = tutorials as? DataSnapshot {
+                    if let tutorial = Tutorial(snapshot: data) {
+                        self.tutorials.append(tutorial)
+                    }
+                }
+            }
+            self.collectionView?.reloadData()
+        })
+        
+    
         
         
+    
+    }
+
+    
+    @IBAction func UploadButton(_ sender: UIBarButtonItem) {
         
-//        ref.observeSingleEvent(of: .value, with: { snapshot in
-//
-//            for tutorial in snapshot.children {
-//                if let data = tutorial as? DataSnapshot {
-//                    if let tutorial = Tutorial(snapshot: data) {
-//                        self.tutorials.append(tutorial)
-//                    }
-//                }
-//            }
-//        })
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TutorialUploadViewController")
+        self.present(vc!, animated: true, completion: nil)
         
-        
-        
-            let nib = UINib(nibName: "CustomCell", bundle: nil)
-            collectionView?.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-        
-            collectionView?.reloadData()
-        }
+    }
     
     
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-        }
-        
-        func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-            return 1
-        }
-        
-        
-        override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            print(tutorials.count)
-            return tutorials.count
-        }
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tutorials.count
+    }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCell
-        
         let tutorial = tutorials[indexPath.row]
         
         cell.tutorialName?.text = tutorial.tutorialName
+        cell.duration.text = "\(tutorial.duration)"
+        cell.tutorialDescription.text = tutorial.tutorialDescription
         cell.animate()
         
         return cell

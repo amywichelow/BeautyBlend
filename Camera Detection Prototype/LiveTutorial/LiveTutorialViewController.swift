@@ -10,9 +10,7 @@ import Firebase
 class LiveTutorialViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    @IBAction func signOutButton(_ sender: Any) {
-        AppManager.shared.logout()
-    }
+   
     
     @IBOutlet weak var takePhotoButton: UIButton!
     var image: UIImage?
@@ -21,9 +19,6 @@ class LiveTutorialViewController: UIViewController, UIImagePickerControllerDeleg
         super.viewDidLoad()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        AppManager.shared.logout()
-    }
     
     @IBAction func takePhoto(_ sender: UIButton) {
         let picker = UIImagePickerController()
