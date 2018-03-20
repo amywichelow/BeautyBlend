@@ -9,11 +9,17 @@ import UIKit
 class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var tutorialName: UILabel!
+    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var duration: UILabel!
-    @IBOutlet weak var difficulty: UILabel!
+    @IBOutlet weak var difficulty: UIImageView!
+    @IBOutlet weak var tutorialDescription: UILabel!
     
     
-    @IBOutlet weak var pinImage: UIImageView!
+    @IBAction func goButton(_ sender: Any) {
+        
+    }
+    
+    @IBOutlet weak var mainTutorialImage: UIImageView!
     
     
     override func prepareForReuse() {

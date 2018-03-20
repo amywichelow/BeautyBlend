@@ -20,11 +20,16 @@
 		E10B7A16205AB658004D6925 /* CustomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A15205AB658004D6925 /* CustomUser.swift */; };
 		E10B7A18205AB95B004D6925 /* Tutorial+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */; };
 		E1115AD32046F40700DCCC30 /* HomepageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1115AD22046F40700DCCC30 /* HomepageStoryboard.storyboard */; };
+		E11CBD91206020CE004FFE80 /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11CBD90206020CE004FFE80 /* StepViewController.swift */; };
+		E11CBD932061198E004FFE80 /* TutorialStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11CBD922061198E004FFE80 /* TutorialStep.swift */; };
+		E11CBD9420612AF3004FFE80 /* Gotham Bold Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17D2169205FD96B002E467B /* Gotham Bold Regular.ttf */; };
+		E11CBD9520612AF6004FFE80 /* Sweet Pea_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17D215F205D701B002E467B /* Sweet Pea_2.ttf */; };
+		E11CBD9620612AF8004FFE80 /* Gotham Rounded Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17D2168205FD898002E467B /* Gotham Rounded Book.ttf */; };
 		E12D7AE320442A0D00E6B7F2 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */; };
 		E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */; };
 		E12D7AEF20459F0600E6B7F2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */; };
 		E14BAFEC205825A8003F064F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFEB205825A8003F064F /* Tutorial.swift */; };
-		E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */; };
+		E14BAFEE205826E8003F064F /* AddTutorialStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BAFED205826E8003F064F /* AddTutorialStep.swift */; };
 		E16247662046FD080085F0DF /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16247652046FD080085F0DF /* CustomCell.xib */; };
 		E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1735864204997FE00043B5F /* GoogleService-Info.plist */; };
 		E173586A20499A9800043B5F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586620499A9300043B5F /* Bolts.framework */; };
@@ -102,11 +107,13 @@
 		E10B7A15205AB658004D6925 /* CustomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUser.swift; sourceTree = "<group>"; };
 		E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial+Extension.swift"; sourceTree = "<group>"; };
 		E1115AD22046F40700DCCC30 /* HomepageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomepageStoryboard.storyboard; sourceTree = "<group>"; };
+		E11CBD90206020CE004FFE80 /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		E11CBD922061198E004FFE80 /* TutorialStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStep.swift; sourceTree = "<group>"; };
 		E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		E12D7AEC20445F2A00E6B7F2 /* UIViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewStyles.swift; path = "Camera Detection Prototype/IBDesignables/UIViewStyles.swift"; sourceTree = SOURCE_ROOT; };
 		E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E14BAFEB205825A8003F064F /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tutorial.swift; path = "Camera Detection Prototype/MainFeed/Tutorial.swift"; sourceTree = SOURCE_ROOT; };
-		E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTutorialInfo.swift; sourceTree = "<group>"; };
+		E14BAFED205826E8003F064F /* AddTutorialStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTutorialStep.swift; sourceTree = "<group>"; };
 		E16247652046FD080085F0DF /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		E1735864204997FE00043B5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E173586620499A9300043B5F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -403,8 +410,8 @@
 				E12D7AE220442A0D00E6B7F2 /* HomepageViewController.swift */,
 				E12D7AEE20459F0600E6B7F2 /* CollectionViewCell.swift */,
 				E16247652046FD080085F0DF /* CustomCell.xib */,
-				E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */,
 				E14BAFEB205825A8003F064F /* Tutorial.swift */,
+				E11CBD922061198E004FFE80 /* TutorialStep.swift */,
 				E10B7A17205AB95B004D6925 /* Tutorial+Extension.swift */,
 			);
 			path = MainFeed;
@@ -433,7 +440,9 @@
 		E12D7AEA20445CA800E6B7F2 /* BasicTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				E14BAFED205826E8003F064F /* BasicTutorialInfo.swift */,
+				E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */,
+				E14BAFED205826E8003F064F /* AddTutorialStep.swift */,
+				E11CBD90206020CE004FFE80 /* StepViewController.swift */,
 			);
 			path = BasicTutorial;
 			sourceTree = "<group>";
@@ -641,8 +650,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1115AD32046F40700DCCC30 /* HomepageStoryboard.storyboard in Resources */,
+				E11CBD9620612AF8004FFE80 /* Gotham Rounded Book.ttf in Resources */,
 				E1F4D5121FB34F170063DE5F /* LaunchScreen.storyboard in Resources */,
+				E11CBD9520612AF6004FFE80 /* Sweet Pea_2.ttf in Resources */,
 				E10B7A0F20594D71004D6925 /* Info.plist in Resources */,
+				E11CBD9420612AF3004FFE80 /* Gotham Bold Regular.ttf in Resources */,
 				E1735865204997FE00043B5F /* GoogleService-Info.plist in Resources */,
 				E17D215D205D3A5E002E467B /* Assets.xcassets in Resources */,
 				E16247662046FD080085F0DF /* CustomCell.xib in Resources */,
@@ -846,6 +858,7 @@
 				E1F4D50A1FB34F170063DE5F /* LiveTutorialViewController.swift in Sources */,
 				E1B371121FBF4B1500877BA2 /* StepFour.swift in Sources */,
 				E10B7A0C20594D71004D6925 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				E11CBD91206020CE004FFE80 /* StepViewController.swift in Sources */,
 				E12D7AEF20459F0600E6B7F2 /* CollectionViewCell.swift in Sources */,
 				E1E1F7A020332F350099D10A /* AppContainerViewController.swift in Sources */,
 				E12D7AED20445F2A00E6B7F2 /* UIViewStyles.swift in Sources */,
@@ -865,7 +878,8 @@
 				E10B7A0E20594D71004D6925 /* YALAnimatingTabBarConstants.m in Sources */,
 				E1B371141FBF4B1C00877BA2 /* StepFive.swift in Sources */,
 				E10B7A0D20594D71004D6925 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
-				E14BAFEE205826E8003F064F /* BasicTutorialInfo.swift in Sources */,
+				E11CBD932061198E004FFE80 /* TutorialStep.swift in Sources */,
+				E14BAFEE205826E8003F064F /* AddTutorialStep.swift in Sources */,
 				E10B7A1220594D71004D6925 /* YALTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

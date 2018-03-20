@@ -7,8 +7,8 @@ extension Tutorial {
         return [
             "tutorialName": tutorialName,
             "duration": duration,
-            //"difficulty": difficulty,
-            "description": description,
+            "difficulty": difficulty,
+            "tutorialDescription": tutorialDescription,
             "user": CustomUser.shared.username!,
             "usser_uid": Auth.auth().currentUser!.uid
         ]

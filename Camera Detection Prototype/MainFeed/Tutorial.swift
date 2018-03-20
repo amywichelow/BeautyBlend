@@ -13,26 +13,29 @@ class Tutorial {
     
     var uuid: String?
     let tutorialName: String
-//    let difficulty: String
-    let duration: String
-    let description: String
+    let difficulty: Int
+    let duration: Int
+    let tutorialDescription: String
     
     init?(snapshot: DataSnapshot) {
+        
         if let snapshotData = snapshot.value as? [String: Any] {
             uuid = snapshot.key
             tutorialName = snapshotData ["tutorialName"] as! String
-       //     difficulty = snapshotData ["difficulty"] as! String
-            duration = snapshotData ["duration"] as! String
-            description = snapshotData ["description"] as! String
+            difficulty = snapshotData ["difficulty"] as! Int
+            duration = snapshotData ["duration"] as! Int
+            tutorialDescription = snapshotData ["tutorialDescription"] as! String
+        } else {
+            return nil
         }
-        return nil
+        
     }
     
-    init(tutorialName: String, duration: String, description: String) {
+    init(tutorialName: String, duration: Int, difficulty: Int, tutorialDescription: String) {
         self.tutorialName = tutorialName
         self.duration = duration
-      //  self.difficulty = difficulty
-        self.description = description
+        self.difficulty = difficulty
+        self.tutorialDescription = tutorialDescription
     }
     
 }
