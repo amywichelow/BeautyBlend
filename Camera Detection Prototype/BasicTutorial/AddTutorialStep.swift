@@ -20,10 +20,12 @@ class AddTutorialStep: UIViewController {
     
     @IBOutlet weak var stepLabel: UILabel!
     
-    @IBOutlet weak var tutorialStepDescription: UITextField!
+    @IBOutlet weak var tutorialStepDescription: UITextView!
     
     @IBAction func addStepButton(_ sender: Any) {
         tutorialSteps.append(TutorialStep(tutorialStepDescription: self.tutorialStepDescription.text!))
+        tutorialStepDescription.text = nil
+        stepLabel.text = "Step \(tutorialSteps.count + 1)"
     }
     
     @IBAction func finishUploadButton(_ sender: Any) {
@@ -34,6 +36,10 @@ class AddTutorialStep: UIViewController {
             self.present(vc!, animated: true, completion: nil)
             
         }
+    }
+    
+    override func viewDidLoad() {
+        stepLabel.text = "Step 1"
     }
     
     func upload(completion: @escaping (_ success: Bool) -> Void) {
@@ -55,7 +61,5 @@ class AddTutorialStep: UIViewController {
         
 }
     
-func viewDidLoad() {
-        
-}
+
 

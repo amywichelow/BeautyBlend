@@ -5,8 +5,8 @@ import Firebase
 class TutorialUploadViewController: UIViewController {
     
     let storage = Storage.storage()
-
-    let tutorial = Tutorial(tutorialName: "Amy's Tutorial", duration: 10, difficulty: 3)
+    
+    var tutorial = Tutorial(tutorialName: "Amy's Tutorial", duration: 10, difficulty: 3)
     
     @IBAction func cancelButton(_ sender: Any) {
         

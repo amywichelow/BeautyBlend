@@ -40,6 +40,7 @@
 		E173586D20499A9800043B5F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E173586920499A9800043B5F /* FBSDKMessengerShareKit.framework */; };
 		E178B0F020545AC20047CA9A /* TutorialUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178B0EF20545AC20047CA9A /* TutorialUploadViewController.swift */; };
 		E181064C2056DD9D009B7B57 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181064B2056DD9D009B7B57 /* UploadViewController.swift */; };
+		E1A8542020863F4A00599AA2 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8541F20863F4A00599AA2 /* UserProfileViewController.swift */; };
 		E1A8A305203B0D1A00F60B21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */; };
 		E1B3710E1FBF259900877BA2 /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3710D1FBF259900877BA2 /* StepTwo.swift */; };
 		E1B371101FBF4B0A00877BA2 /* StepThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3710F1FBF4B0A00877BA2 /* StepThree.swift */; };
@@ -136,6 +137,7 @@
 		E17D2168205FD898002E467B /* Gotham Rounded Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Rounded Book.ttf"; path = "../../../../Downloads/Connections-master/Extension/Gotham Rounded Book.ttf"; sourceTree = "<group>"; };
 		E17D2169205FD96B002E467B /* Gotham Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham Bold Regular.ttf"; path = "../../../../Library/Fonts/Gotham Bold Regular.ttf"; sourceTree = "<group>"; };
 		E181064B2056DD9D009B7B57 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		E1A8541F20863F4A00599AA2 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		E1A8A304203B0D1A00F60B21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E1B3710D1FBF259900877BA2 /* StepTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
 		E1B3710F1FBF4B0A00877BA2 /* StepThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepThree.swift; sourceTree = "<group>"; };
@@ -476,6 +478,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E1A8541E20863F3200599AA2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8541F20863F4A00599AA2 /* UserProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		E1F4D4FB1FB34F170063DE5F = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +516,7 @@
 				E12D7AE920445C3300E6B7F2 /* Delegate */,
 				E12D7AE820445C3100E6B7F2 /* LoginSignup */,
 				E12D7AE720445C2E00E6B7F2 /* MainFeed */,
+				E1A8541E20863F3200599AA2 /* Profile */,
 				E12D7AE420445C1A00E6B7F2 /* LiveTutorial */,
 				E1115AD12046F3B700DCCC30 /* Storyboards */,
 				E12D7AEA20445CA800E6B7F2 /* BasicTutorial */,
@@ -857,6 +868,7 @@
 				E1E1F79E2033076B0099D10A /* LoginViewController.swift in Sources */,
 				E1B371161FBF4B2700877BA2 /* StepSix.swift in Sources */,
 				E10B7A0B20594D71004D6925 /* UIView+Insets.m in Sources */,
+				E1A8542020863F4A00599AA2 /* UserProfileViewController.swift in Sources */,
 				E10B7A18205AB95B004D6925 /* Tutorial+Extension.swift in Sources */,
 				E1F4D50A1FB34F170063DE5F /* LiveTutorialViewController.swift in Sources */,
 				E1B371121FBF4B1500877BA2 /* StepFour.swift in Sources */,

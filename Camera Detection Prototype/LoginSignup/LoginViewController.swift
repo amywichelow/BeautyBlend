@@ -14,11 +14,11 @@ class LoginViewController: UIViewController {
         
     }
     
+    
     @IBAction func signUpButton(_ sender: Any) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController")
         self.present(vc!, animated: true, completion: nil)
-  
         
     }
     
@@ -47,7 +47,12 @@ class LoginViewController: UIViewController {
         
     }
     
-    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(true)
+//        if Auth.auth().currentUser != nil {
+//            performSegue(withIdentifier: "HomepageViewControllerContainer", sender: self)
+//        }
+//    }
     
     
 }
