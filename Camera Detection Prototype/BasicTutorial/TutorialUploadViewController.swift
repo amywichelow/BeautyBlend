@@ -4,8 +4,11 @@ import Firebase
 
 class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
     
-    
+//    let step: Float = 5;
     @IBAction func durationSliderAction(_ sender: Any) {
+        
+//        let roundedValue = round(sender.value/step) * step
+//        sender.value = roundedValue
         
         let currentValue = Int(durationSlider.value)
         durationValue.text = "\(currentValue)"
@@ -55,7 +58,7 @@ class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    // Move the text field in a pretty animation!
+    // Move the text field in an animation
     func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
         let moveDuration = 0.3
         let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
