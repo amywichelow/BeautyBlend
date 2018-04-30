@@ -344,10 +344,6 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                 <color key="backgroundColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zJW-IT-zhH">
-                                                <rect key="frame" x="0.0" y="42" width="331" height="318"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-4q-Mim">
                                                 <rect key="frame" x="125" y="12" width="81" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,10 +378,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-WQ-r2S">
-                                <rect key="frame" x="22" y="649" width="174" height="53"/>
+                                <rect key="frame" x="22" y="649" width="180" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
-                                <state key="normal" image="finalAddStepButtonAsset 33">
+                                <state key="normal" image="addStepFinalAsset 23">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -393,15 +389,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bY-2n-Nca">
-                                <rect key="frame" x="218" y="649" width="174" height="53"/>
+                                <rect key="frame" x="210" y="649" width="180" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="finalFinishUploadButtonAsset 34"/>
+                                <state key="normal" image="finishUploadFinalAsset 22"/>
                                 <connections>
                                     <action selector="finishUploadButton:" destination="OXQ-Ie-4HN" eventType="touchUpInside" id="IPA-fQ-H0J"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92941176470588238" green="0.90588235294117647" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="U4G-ic-D0K"/>
                     </view>
                     <connections>
@@ -1045,12 +1041,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addStepFinalAsset 23" width="328" height="123"/>
         <image name="addStepsFinalAsset 21" width="522" height="123"/>
-        <image name="finalAddStepButtonAsset 33" width="307" height="96"/>
-        <image name="finalFinishUploadButtonAsset 34" width="307" height="96"/>
         <image name="finalLoginButtonAsset 31" width="495" height="96"/>
         <image name="finalNextButtonAsset 32" width="495" height="96"/>
         <image name="finalSignUpButtonAsset 30" width="495" height="96"/>
+        <image name="finishUploadFinalAsset 22" width="328" height="123"/>
         <image name="goButtonV2" width="303" height="303"/>
         <image name="photoUploadButtonAsset" width="101" height="79"/>
         <image name="profileImgUploadButton23Asset 29" width="287" height="287"/>
