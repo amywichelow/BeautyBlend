@@ -22,11 +22,11 @@ class UserProfileViewController: UIViewController, UITableViewDataSource, UITabl
         
     }
     
-    
-    
     @IBOutlet weak var userUsername: UILabel!
     
     @IBOutlet weak var profileTableView: UITableView!
+    
+    //show up user uploads..????
     
     let tutorialUpload = [""]
     
@@ -38,16 +38,14 @@ class UserProfileViewController: UIViewController, UITableViewDataSource, UITabl
         let uid = Auth.auth().currentUser!.uid
         
         let userRef = Database.database().reference(withPath: "users/\(uid)")
-        
 
         userRef.observeSingleEvent(of: .value, with: { snapshot in
-        
-        let m = snapshot.value as? String
-
-        self.userUsername.text = m
-
+            if let user = Users(snapshot: snapshot) {
+                self.userUsername.text = user.username
+            }
             print(snapshot)
         })
+
         
         profileTableView.delegate = self
             profileTableView.dataSource = self

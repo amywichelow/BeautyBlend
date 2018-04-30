@@ -56,6 +56,8 @@ class AddTutorialStep: UIViewController {
     
     func upload(completion: @escaping (_ success: Bool) -> Void) {
         
+        
+        
         newTutorialRef.setValue(tutorial.toDict()) { error, ref in
             
             var count = 0
@@ -73,17 +75,19 @@ class AddTutorialStep: UIViewController {
         
 }
 
-//extension AddTutorialStep: UITextFieldDelegate, UITextViewDelegate {
-//
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        test.forTextView = textView
-//    }
-//
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        test.forTextField = textField
-//    }
-//
-//}
+extension AddTutorialStep: UITextFieldDelegate, UITextViewDelegate {
+
+
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.text == "" {
+            print("enable save button")
+            return
+        }
+        
+        print("disable save button")
+    }
+
+}
 
 
 

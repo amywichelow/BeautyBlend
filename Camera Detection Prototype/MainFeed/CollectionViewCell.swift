@@ -32,6 +32,15 @@ class CustomCell: UICollectionViewCell {
         }
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        let deviceSize = UIScreen.main.bounds.size
+        let flexSize = sqrt(Double(deviceSize.width * deviceSize.height) / (Double(33)))
+        
+        return CGSize(width: flexSize , height: flexSize)
+        
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius

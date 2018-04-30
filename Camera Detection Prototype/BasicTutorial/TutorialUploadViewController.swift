@@ -4,6 +4,26 @@ import Firebase
 
 class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
     
+    
+    @IBAction func durationSliderAction(_ sender: Any) {
+        
+        let currentValue = Int(durationSlider.value)
+        durationValue.text = "\(currentValue)"
+        
+    }
+    @IBOutlet weak var durationSlider: UISlider!
+    @IBOutlet weak var durationValue: UILabel!
+    
+    @IBAction func difficultySliderAction(_ sender: Any) {
+        
+        let currentValue = Int(difficultySlider.value)
+        difficultyValue.text = "\(currentValue)"
+        
+    }
+    @IBOutlet weak var difficultySlider: UISlider!
+    @IBOutlet weak var difficultyValue: UILabel!
+    
+    
     let storage = Storage.storage()
     
     let ref = Database.database().reference().child("tutorials").childByAutoId()
@@ -11,8 +31,8 @@ class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
     var tutorial: Tutorial!
     
     @IBOutlet weak var tutorialNameTextField: UITextField!
-    @IBOutlet weak var durationTextField: UITextField!
-    @IBOutlet weak var difficultyTextField: UITextField!
+//    @IBOutlet weak var durationTextField: UITextField!
+//    @IBOutlet weak var difficultyTextField: UITextField!
     @IBOutlet weak var mainTutorialImage: UIImageView!
     
     //var textView: UITextView?
@@ -63,13 +83,9 @@ class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextStepButton(_ sender: Any) {
         
-        let data: [String: Any] = [
-            "tutorialName": self.tutorialNameTextField.text!,
-            "duration": Int(self.durationTextField.text!)!,
-            "difficulty": Int(self.difficultyTextField.text!)!
-        ]
+        tutorial = Tutorial(tutorialName: self.tutorialNameTextField.text!, duration: Int(self.durationValue.text!)!, difficulty: Int(self.difficultyValue.text!)!)
+
         
-        ref.updateChildValues(data)
         
     }
     
