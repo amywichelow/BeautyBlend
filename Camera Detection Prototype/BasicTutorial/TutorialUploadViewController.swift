@@ -86,8 +86,6 @@ class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
         
         tutorial = Tutorial(tutorialName: self.tutorialNameTextField.text!, duration: Int(self.durationValue.text!)!, difficulty: Int(self.difficultyValue.text!)!)
 
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

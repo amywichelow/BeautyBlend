@@ -65,6 +65,7 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
         let tutorial = tutorials[indexPath.row]
         
         cell.tutorialName?.text = tutorial.tutorialName
+        cell.username.text = tutorial.user
         cell.duration.text = "\(tutorial.duration)"
         cell.animate()
         

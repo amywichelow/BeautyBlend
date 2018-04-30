@@ -12,6 +12,7 @@ import Firebase
 class Tutorial {
     
     var uuid: String?
+    var user: String?
     let tutorialName: String
     let difficulty: Int
     let duration: Int
@@ -22,6 +23,7 @@ class Tutorial {
         
         if let snapshotData = snapshot.value as? [String: Any] {
             uuid = snapshot.key
+            user = snapshotData ["user"] as! String?
             tutorialName = snapshotData ["tutorialName"] as! String
             difficulty = snapshotData ["difficulty"] as! Int
             duration = snapshotData ["duration"] as! Int
