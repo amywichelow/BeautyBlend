@@ -13,6 +13,11 @@ class SignUpViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    let storage = Storage.storage().reference()
+    let databaseRef = Database.database().reference()
+    
+    @IBAction func uploadProfileImage(_ sender: Any) {
+    }
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -24,6 +29,9 @@ class SignUpViewController: UIViewController {
         imageView.image = UIImage(named: "ProfileImagePlaceholderAsset")
         return imageView
     }
+    
+    
+    
     
     @IBAction func signUpButton(_ sender: Any) {
         

@@ -22,6 +22,20 @@ class AddTutorialStep: UIViewController {
     
     @IBOutlet weak var tutorialStepDescription: UITextView!
     
+ //   var textView: UITextView?
+    
+    
+   // let test = Texter()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        stepLabel.text = "Step 1"
+        
+       // test.viewController = self
+        
+    }
+    
     @IBAction func addStepButton(_ sender: Any) {
         tutorialSteps.append(TutorialStep(tutorialStepDescription: self.tutorialStepDescription.text!))
         tutorialStepDescription.text = nil
@@ -38,9 +52,7 @@ class AddTutorialStep: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        stepLabel.text = "Step 1"
-    }
+    
     
     func upload(completion: @escaping (_ success: Bool) -> Void) {
         
@@ -60,6 +72,18 @@ class AddTutorialStep: UIViewController {
     }
         
 }
-    
+
+//extension AddTutorialStep: UITextFieldDelegate, UITextViewDelegate {
+//
+//    func textViewDidBeginEditing(_ textView: UITextView) {
+//        test.forTextView = textView
+//    }
+//
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        test.forTextField = textField
+//    }
+//
+//}
+
 
 
