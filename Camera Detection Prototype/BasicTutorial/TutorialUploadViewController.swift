@@ -11,6 +11,7 @@ class TutorialUploadViewController: UIViewController, UITextFieldDelegate {
         durationValue.text = "\(currentValue)"
         
     }
+    
     @IBOutlet weak var durationSlider: UISlider!
     @IBOutlet weak var durationValue: UILabel!
     
