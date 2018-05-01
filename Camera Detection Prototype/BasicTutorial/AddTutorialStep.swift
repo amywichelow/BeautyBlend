@@ -14,6 +14,8 @@ class AddTutorialStep: UIViewController {
 
     var tutorial: Tutorial!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     let newTutorialRef = Database.database().reference().child("tutorials").childByAutoId()
     
     var tutorialSteps = [TutorialStep]()
@@ -42,6 +44,7 @@ class AddTutorialStep: UIViewController {
         tutorialSteps.append(TutorialStep(tutorialStepDescription: self.tutorialStepDescription.text!))
         tutorialStepDescription.text = nil
         stepLabel.text = "Step \(tutorialSteps.count + 1)"
+        tableView.reloadData()
     }
     
     @IBAction func finishUploadButton(_ sender: Any) {
@@ -81,7 +84,7 @@ extension AddTutorialStep: UITextFieldDelegate, UITextViewDelegate {
 
 
     func textViewDidChange(_ textView: UITextView) {
-        if textView.text == "" {
+        if textView.text == nil {
             print("enable save button")
             return
         }
@@ -96,6 +99,25 @@ extension AddTutorialStep: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tutorialSteps.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+        let step = tutorialSteps[indexPath.row]
+        cell?.textLabel?.text = step.tutorialStepDescription
+        
+        return cell!
+    }
+    
+}
+
+
+extension AddTutorialStep: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tutorialSteps.count
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")

@@ -31,8 +31,6 @@ class SignUpViewController: UIViewController {
     }
     
     
-    
-    
     @IBAction func signUpButton(_ sender: Any) {
         
         guard passwordTextField.text! == confirmPasswordTextField.text! else {
