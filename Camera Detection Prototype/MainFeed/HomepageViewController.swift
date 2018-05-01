@@ -43,14 +43,12 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
     
     }
 
-    
     @IBAction func UploadButton(_ sender: UIBarButtonItem) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "TutorialUploadViewController")
         self.present(vc!, animated: true, completion: nil)
         
     }
-    
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -61,6 +59,7 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CustomCell
         let tutorial = tutorials[indexPath.row]
         
@@ -68,26 +67,15 @@ class HomepageViewController: UICollectionViewController, UISearchBarDelegate, U
         cell.username.text = tutorial.user
         cell.duration.text = "\(tutorial.duration)"
         cell.animate()
-        
+    
         return cell
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 170, height: 300)
-        }
-        
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-            return sectionInsets
-        }
-        
-    }
+}
+
+
