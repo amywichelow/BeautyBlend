@@ -469,10 +469,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-7a-NJg">
-                                <rect key="frame" x="51" y="625" width="312" height="74"/>
+                                <rect key="frame" x="55" y="649" width="303" height="58"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
-                                <state key="normal" image="nextStepFinalAsset 24">
+                                <state key="normal" image="finalNextButtonAsset 32">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -480,21 +480,12 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-Dv-rFw">
-                                <rect key="frame" x="26" y="134" width="362" height="337"/>
+                                <rect key="frame" x="26" y="135" width="362" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-C6-ciR" customClass="UIViewStyles" customModule="Camera_Detection_Prototype" customModuleProvider="target">
-                                <rect key="frame" x="26" y="480" width="362" height="128"/>
+                                <rect key="frame" x="26" y="491" width="362" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wC4-LF-j0U">
-                                        <rect key="frame" x="0.0" y="0.0" width="362" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.96088588237762451" green="0.95253419876098633" blue="0.98038923740386963" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -502,9 +493,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-QK-93D" customClass="UIViewStyles" customModule="Camera_Detection_Prototype" customModuleProvider="target">
-                                <rect key="frame" x="26" y="85" width="362" height="40"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wC4-LF-j0U">
+                                <rect key="frame" x="26" y="491" width="362" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICD-N6-HFZ">
                                         <rect key="frame" x="132" y="8" width="99" height="23"/>
@@ -522,6 +514,19 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+=======
+                                <color key="backgroundColor" red="0.96088588237762451" green="0.95253419876098633" blue="0.98038923740386963" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICD-N6-HFZ">
+                                <rect key="frame" x="185" y="94" width="42" height="23"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="19"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.61568627450000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+>>>>>>> parent of 59fab7e... Updated next step button UI
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Or7-2P-nYQ"/>
@@ -1199,9 +1204,14 @@
     <resources>
         <image name="addStepFinalAsset 23" width="328" height="123"/>
         <image name="addStepsFinalAsset 21" width="522" height="123"/>
+        <image name="finalNextButtonAsset 32" width="495" height="96"/>
         <image name="finishUploadFinalAsset 22" width="328" height="123"/>
         <image name="loginFinalAsset 20" width="522" height="123"/>
+<<<<<<< HEAD
         <image name="nextStepFinalAsset 24" width="522" height="123"/>
+=======
+        <image name="profileImgUploadButton23Asset 29" width="287" height="287"/>
+>>>>>>> parent of 59fab7e... Updated next step button UI
         <image name="signupFinalAsset 19" width="522" height="123"/>
         <image name="uploadIconAsset 40" width="24" height="24"/>
     </resources>
