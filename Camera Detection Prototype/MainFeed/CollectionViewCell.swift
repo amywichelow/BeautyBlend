@@ -8,6 +8,8 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
+    
+    
     @IBOutlet weak var tutorialName: UILabel!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var duration: UILabel!

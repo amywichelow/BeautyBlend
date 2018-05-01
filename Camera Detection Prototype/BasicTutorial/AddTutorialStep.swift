@@ -22,7 +22,9 @@ class AddTutorialStep: UIViewController {
     
     @IBOutlet weak var tutorialStepDescription: UITextView!
     
- //   var textView: UITextView?
+    @IBOutlet weak var stepTableView: UITableView!
+    
+    //   var textView: UITextView?
     
     
    // let test = Texter()
@@ -87,6 +89,23 @@ extension AddTutorialStep: UITextFieldDelegate, UITextViewDelegate {
         print("disable save button")
     }
 
+}
+
+extension AddTutorialStep: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tutorialSteps.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        
+        let step = tutorialSteps[indexPath.row]
+        cell?.textLabel?.text = step.tutorialStepDescription
+        
+        return cell!
+    }
+    
 }
 
 
